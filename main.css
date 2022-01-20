@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+:root {
+	font-family: 'Open Sans';
+	color: #fff;
+}
+.offwhite {
+	color: #dcdcdc
+}
+.mobile-show {
+	display: none !important;
+}
+#bg {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(desert.gif);
+	object-fit: cover;
+	z-index: -1;
+}
+html,body{
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+.bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.lefthand {
+	padding-left: 3vw;
+}
+.title {
+	text-transform: capitalize;
+	font-family: Roboto;
+	font-weight: 600;
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+.subtitle {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: .5vh;
+	
+}
+.blurb {
+	padding-right: 60vw;
+	padding-bottom: 2vh;
+	font-size: 1.4rem;
+	font-weight: 300;
+	
+}
+.bottombutton {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 7.5vw;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.youtubebutton {
+	font-size: 3rem;
+	margin-bottom: 6vh;
+	color: #fff;
+
+}
+.myworkbutton {
+	font-size: 3rem;
+	margin-right: 20vw;
+	margin-bottom: 6vh;
+}
+/* iPhone Gang: */
+@media only screen and (max-width: 750px)  { 
+	.mobile-hide {
+		display: none !important;
+	}
+	.mobile-show {
+		display: block !important;
+	}
+	.bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.title {
+		text-transform: capitalize;
+		font-family: Roboto;
+		font-weight: 600;
+		font-size: 3rem;
+		margin-bottom: 0;
+		letter-spacing: 5px;
+		text-align: center;
+	}
+	.subtitle {
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: .5vh;
+		padding-right: 3vw;
+		
+	}
+	.blurb {
+		padding-right: 9vw;
+		padding-left: 9vw;
+		padding-bottom: 15vh;
+		text-align: center;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+	.bottombutton {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding-right: 7.5vw;
+		font-weight: 600;
+		padding-bottom: 3vh;
+		text-decoration: underline;
+	}
+	.youtubebutton {
+		font-size: 1.75rem;
+		margin-bottom: 6vh;		
+		margin-right: 5vw;
+		color: #fff;
+	
+	}
+	.myworkbutton {
+		font-size: 1.75rem;
+		margin-right: 45vw;
+		margin-bottom: 6vh;
+	}
+  }
