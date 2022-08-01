@@ -37,7 +37,7 @@
 }
 
 #center{
-    width: 65vw; 
+    width: 80vw; 
     margin: 0 auto; 
     background: white; 
     color: black; 
@@ -46,15 +46,38 @@
 
 }
 
-.button{
+.randombutton{
     position:absolute;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    margin-left: 2vw;
+    cursor: pointer;
 
-	background-color: rgb(17, 50, 69);
-	color: rgb(138, 212, 255);
+
+    padding-top: 2vh;
+    padding-bottom:2vh;
+    padding-left: 2vw;
+    padding-right:2vw;
+
+	background-color: rgb(0, 123, 194);
+	color: rgb(255, 255, 255);
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.gamebutton{
+    position:absolute;
+    margin-left: 15vw;
+    cursor: pointer;
+
+
+    padding-top: 2vh;
+    padding-bottom:2vh;
+    padding-left: 2vw;
+    padding-right:2vw;
+
+	background-color: rgb(0, 123, 194);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	border-radius: 5px;
+    font-size: 1.5em;
 }
