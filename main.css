@@ -20,6 +20,13 @@
 	object-fit: cover;
 	z-index: -1;
 }
+#mobilebg {
+	width: 100vw;
+	height: 140%;
+	
+	z-index: -4;
+	object-position: center bottom;
+}
 html,body{
 	margin: 0;
 	height: 100vh;
