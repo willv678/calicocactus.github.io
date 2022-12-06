@@ -1,0 +1,278 @@
+.topBar {
+  color: #000000;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navElement {
+  margin-right: 3vw;
+  float: center;
+  font-size: 20px;
+  display: block;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.navElement:first-of-type{
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  color: white;
+}
+
+.aboutMe {
+  padding: 0;
+}
+
+.getInTouch{
+  font-size:1.75vw;
+  font-weight: 300;
+}
+.main {
+  min-height: 85vh;
+  padding: 0 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexRow{
+  flex: 1;
+  flex-direction: row;
+}
+.info{
+  max-width: 48vw;
+  padding-left: 7.5%;
+}
+.title {
+  font-size: 7.5vw;
+  font-weight: 500;
+}
+
+.aboutMe {
+  font-size: 1.75vw;
+  line-height: 1.4;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12vw;
+
+}
+.mobileFace{
+  width: 27vw;
+  padding-bottom: 1vh;
+  display: none;
+}
+.myFace{
+  width: 27vw;
+  padding-bottom: 1vh;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon{
+  padding: 1vh;
+  margin-right: 15px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socialIcon:last-of-type{
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.scrollDownBox {
+  width: 700px;
+  margin: auto;
+
+}
+
+.bottomIndent{
+  padding-bottom: 1vh;
+  font-size: 1.2vw;
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+
+.projects{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.blogContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  cursor: pointer;
+  width: 70vw;
+  height: 35vh;
+  background-color: #282336;
+  border-radius: 1vw;
+}
+
+.blogText{
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 34vw;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+.blogImage{
+  width: 35vw;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+
+}
+
+.underConstruction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 5vh;
+  padding-top: -10vh;
+}
+
+
+@media only screen and (max-device-width: 1200px) {
+  .main {
+    
+    padding: 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 90vh;
+  }
+  .info{
+    max-width: 80vw;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .aboutMe{
+    text-align: center;
+    font-size: 2vh;
+  }
+  .title{
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .socials{
+    margin-right: 0;
+    padding-bottom: 5vh;
+  }
+  .myFace{
+    display: none
+    }
+  .mobileFace{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .bottomIndent{
+    font-size: 2vw;
+  }
+
+  .underConstruction{
+    font-size: 2vw;
+  }
+
+
+}
+
+
+@media only screen and (max-device-width: 700px) {
+  .container {
+    position: absolute;
+    width: 700px;
+    color: white;
+    margin: 0;
+  }
+  .main {
+    
+    padding: 0 0;
+    flex: 1;
+    margin: auto;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info{
+    margin: 0;
+    max-width: 130vw;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .aboutMe{
+    text-align: center;
+    font-size: 3.5vh;
+    margin: 0;
+    padding-bottom: 6vh;
+  }
+  .title{
+    font-size: 7vh;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  .myFace{
+    display: none
+    }
+  .mobileFace{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+  }
+
+  .bottomIndent{
+    padding-top: 43vh;
+    font-size: 5vw;
+  }
+
+  .underConstruction{
+    font-size: 3vw;
+  }
+
+}
