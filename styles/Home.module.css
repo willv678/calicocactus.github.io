@@ -265,14 +265,18 @@
     margin-right: auto;
     width: 50vh;
   }
-
+  .getInTouch{
+    display: none;
+  }
   .bottomIndent{
-    padding-top: 43vh;
+    padding-top: 30vh;
     font-size: 5vw;
   }
 
   .underConstruction{
-    font-size: 3vw;
+    font-size: 6vw;
+    margin: 15%;
+    text-align: center;
   }
 
 }
