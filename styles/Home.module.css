@@ -4,6 +4,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  position: sticky; 
+  top: 0;
 
 }
 
