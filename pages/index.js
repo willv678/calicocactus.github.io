@@ -9,7 +9,6 @@ import SocialLinkSvg from '../components/SocialLinkSvg'
 import ScrollDownBox from '../components/ScrollDownBox'
 import BlogItem from '../components/BlogItem'
 
-
 export default function Home() {
   return (
     <>
@@ -20,6 +19,8 @@ export default function Home() {
       </Head>
       <div id="home"/>
       <TopBar />
+
+
       <main  className={styles.main}>
         <div className={styles.aboutMeDiv}>
           <NameTitle/>
@@ -30,8 +31,17 @@ export default function Home() {
           <GetInTouchMessage/>
           <SocialLinkSvg/>
         </div>
-
       </main>
+
+      <mobileMain className={styles.mobileMain}>
+        <NameTitle/>
+        <CirclePhoto/>
+        <AboutMe/>
+        <SocialLinkSvg/>
+
+      </mobileMain>
+
+
       <ScrollDownBox/>
       <projects id="projects">
         <BlogItem title="TechDetect" link="https://github.com/willv678/TechDetect" color = "#06B002" description="OpenCV powered python facial detection attendance manager designed with the classroom in mind. Developed originally during a summer internship at the Georgia Tech Research Institute" imgLink = "/images/techdetectbanner.png"/>

@@ -4,6 +4,9 @@
   justify-content: center;
 }
 
+.mobileMain {
+  display: none;
+}
 .topBar {
   color: #000000;
   background-color: white;
@@ -103,7 +106,7 @@
 }
 .scrollDownText{
   padding-bottom: 1vh;
-  font-size: 1.2vw;
+  font-size: 2vh;
 }
 
 .scrollDownSvg{
@@ -131,6 +134,16 @@
   overflow: hidden;
 }
 
+.blogTitle{
+  font-size: 3vw;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.blogTextEntry{
+  font-size: 1.5vw;
+  width: 95%;
+}
+
 .blogText{
   padding-left: 5%;
   display: flex;
@@ -152,10 +165,119 @@
   align-items: center;
   display: flex;
 }
-
+.blogMobileImage{
+  display: none;
+}
 .blogImage{
   height: "100%";
   object-fit: scale-down;
   overflow: hidden;
+
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+      display: none
+  }
+  .mobileMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0;
+  }
+  .nameTitle {
+    font-size: 15vw;
+    margin: 0;
+    padding-top: 2vh;
+    width: 100vw;
+
+  }
+  .circlePhoto{
+    width: 75vw;
+    padding-top: 0;
+  }
+  .aboutMe {
+    font-size: 3.7vw;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .socialIconsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 400px;
+  }
+  .socialIcon{
+    padding: 1vw;
+    margin-right: 7vw;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .socialIcon:first-of-type{
+    margin-left: 3vw;
+  }
+  .socialIcon:last-of-type{
+    margin-right: 3vw;
+  }
+
+  .socialSvg{
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .scrollDownBox{
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+  }
+  .scrollDownSvg{
+    width: 10vw;
+    height: 3vw;
+  }
+  .blogContainer{
+    width: 85vw;
+    height: 75vw;
+    min-height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .blogText{
+    padding-left: 0%;
+    width: 70vw;
+    font-weight: 500;
+    padding-top: 0%;
+    padding-bottom: 5%;
+  
+  }
+  .blogTitle{
+    font-size: 7vw;
+    padding-bottom: 1vh;
+  }
+  .blogTextEntry{
+    font-size: 2.91vw;
+    width: 100%;
+  }
+  .blogImageContainer{
+    display: none;
+  }
+  .blogMobileImage{
+    display: flex;
+    width: 100%;
+    object-fit: scale-down;
+  
+  }
+  .blogImage{
+    display: none;
+    height: "100%";
+    object-fit: scale-down;
+    overflow: hidden;
+  
+  }
+
 
 }
