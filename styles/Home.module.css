@@ -186,13 +186,27 @@
 .blogPost h3{
   font-weight: 400;
 }
-.blogPost img{
-  width: 100%;
-  height: auto;
-  object-fit: scale-down;
-  overflow: hidden;
+.blogPost h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
+.blogPost img {
+  display: block;
+  margin: auto;
+  min-width: 65vw;
+  max-width: 75vw;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2vh;
+}
+
+.blogPost code:first-child {
+  padding-left: 0;
+}
 .blogPost code{
   background-color: #3B2A3F;
   border-radius: 3px;

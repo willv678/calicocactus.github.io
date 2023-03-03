@@ -52,7 +52,7 @@ ___
 
 
 ![Grayscale Images](https://i.ibb.co/wchCTWp/ME.png)
-_Here are some of the photos the application took of me, I used grayscale and image downsizing to make the faces as easy as possible for my program to detect._
+#### Here are some of the photos the application took of me, I used grayscale and image downsizing to make the faces as easy as possible for my program to detect.
 
 ## Main Application
 - Open ```TechDetect.py``` and enter your database credentials
@@ -70,13 +70,14 @@ ___
 
 ![Internet demo](https://i.ibb.co/D7SLFFp/flaskURL.png)
 
-_Here you can see the URL to our locally hosted site, the default port is 8585._
+#### Here you can see the URL to our locally hosted site, the default port is 8585.
 
 ## Logins
 The Flask site is held behind a login system, with user logins maintained in our SQL database. To add a user, either insert a new record in the login databse, or hit register on the localhost site and enter credentials.
 
 ![Internet login](https://i.ibb.co/WzTwP3R/Tech-Detect-Login-Photo.png)
 ## Viewing Data
+![Web Page](https://i.ibb.co/SdLKQPy/Attendance.png)
 Welcome to our site! You can view today's attendance records with login and logout times that can be organized by either of these factors of by name or id numbers. Additionally, another page holds information of all registered users for view on the website, eliminating the need of a complex database CRUD workbench app.
 
 

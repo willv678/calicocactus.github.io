@@ -3,9 +3,10 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import styles from '/styles/Home.module.css';
 import TopBar from '/components/TopBar';
+import fs from "fs";
+import path from "path";
 
-function Blog(props) {
-    const {data, content} = matter(props.content);
+function Blog({data, content}) {
 
     return (
         <Fragment>
@@ -25,16 +26,29 @@ function Blog(props) {
     );
 }
 
-export const getServerSideProps = async context => {
+export async function getStaticPaths() {
+    const files = fs.readdirSync("content");
+    const paths = files.map(filename => ({
+        params: {
+            blog: filename.replace(".md", "")
+        }
+    }));
 
-    const fs = require("fs");
+    return {
+        paths,
+        fallback: false
+    };
+}
 
-    const {blog} = context.params;
-
-    const content = fs.readFileSync(`${process.cwd()}/content/${blog}.md`, 'utf8')
+export async function getStaticProps({ params }) {
+    const { blog } = params;
+    const filePath = path.join(process.cwd(), "content", `${blog}.md`);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const { data, content } = matter(fileContents);
 
     return {
         props: {
+            data,
             content
         }
     };
