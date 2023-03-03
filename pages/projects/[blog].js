@@ -12,10 +12,8 @@ function Blog({data, content}) {
         <Fragment>
             <TopBar />
             <div className={styles.blogPost}>
-            
             <h1 className="header">{data.title}</h1>
             <h3>{data.description}</h3>
-            
             <div className="container">
             
             <ReactMarkdown children={content} />

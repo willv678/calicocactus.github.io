@@ -2,7 +2,6 @@
 title: TechDetect Attendance Manager
 description: A python machine learning-powered facial detection app
 date: 02-18-2023
-
 ---
 
 ##### [Github Page](https://github.com/willv678/TechDetect)    
@@ -17,7 +16,7 @@ I'm delighted to announce that my project was announced as one of the winners of
 # Setup
 ___
 ## Dependencies
-TechDetect requires few dependencies, with notable packages being OpenCV and Google's Mediapipe package
+TechDetect requires few dependencies, with notable packages being OpenCV and Google's Mediapipe package.
 Ensure you have [Python installed](https://www.python.org/downloads/), and use ```pip install``` to download these packages:
 
 ```
