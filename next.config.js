@@ -1,9 +1,11 @@
-const isProd = process.env.NODE_ENV === 'production'
-
-module.exports = {
-  output: 'export',
-  basePath: isProd ? '/calicocactus.github.io' : '',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
     unoptimized: true,
   },
+  
 }
+
+module.exports = nextConfig
