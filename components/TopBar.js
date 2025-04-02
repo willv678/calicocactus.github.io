@@ -6,6 +6,6 @@ export default function TopBar(){
                 <TopBarItem destination="https://willvarner.me" text="Home"/>
                 <TopBarItem destination="https://willvarner.me/#projects" text="My Work"/>
                 <TopBarItem destination="https://www.linkedin.com/in/will-varner/" text="LinkedIn"/>
-                <TopBarItem destination="/csresume.pdf" text="Resume"/>
+                <TopBarItem destination="/CSResume.pdf" text="Resume"/>
             </div>
 }
