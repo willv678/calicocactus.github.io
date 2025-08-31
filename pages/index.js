@@ -45,6 +45,13 @@ export default function Home() {
       <ScrollDownBox />
       <projects id="projects">
         <BlogItem
+          title="The CDASim Project"
+          slug="CDASim"
+          color="#4e5fffff"
+          description="An integrated co-simulation bridge using ROS 2 and CARLA to test and validate autonomous driving logic for the U.S. Department of Transportation. Delivered through a research partnership between UGA's MSC Lab and Leidos."
+          imgLink="/images/cdasimbanner.png"
+        />
+        <BlogItem
           title="TechDetect"
           slug="techdetect"
           color="#06B002"
