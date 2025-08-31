@@ -30,8 +30,8 @@ This project involved a full-stack effort, from low-level vehicle control logic 
 
 -   **Vehicle Control & PID Tuning**: A major challenge was debugging the vehicle control pipeline. After connecting all the components, the vehicle would not respond correctly to commands. I diagnosed and fixed the issue by tuning the PID controller parameters in the *ackermann_control* node and resolving coordinate system mismatches between ROS and CARLA, enabling the vehicle to accurately follow complex trajectories.
 
-![CARLA Simulation In Action](https://i.imgur.com/your-gif-link-here.gif)
-#### A successful test run in CARLA, with the vehicle correctly navigating a turn after the control system fixes were implemented.
+![CARLA Simulation In Action](/gifs/cdasim.gif)
+#### A successful test run in CARLA, with the vehicle correctly following it's route given my the CARMA manager running in the background.
 
 -   **Full-Stack Debugging**: I was responsible for identifying and fixing bugs across the entire simulation stack. This involved a methodical process of isolating components, verifying topic and service connections with command-line tools (*ros2 topic echo/info*), and injecting debug logs to trace data flow from the high-level CARMA guidance nodes all the way down to the final control commands being sent to the simulator.
 
